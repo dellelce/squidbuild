@@ -1,0 +1,611 @@
+Making all in compat
+make[1]: Entering directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H  -I../../repo -I../../repo/include -I../../repo/lib -I../../repo/src -I../include   -I../../repo/libltdl   -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c -o assert.lo ../../repo/compat/assert.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I../../repo -I../../repo/include -I../../repo/lib -I../../repo/src -I../include -I../../repo/libltdl -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c ../../repo/compat/assert.cc  -DDLL_EXPORT -DPIC -o .libs/assert.o
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:152:0: error: "O_RDONLY" redefined [-Werror]
+ #define O_RDONLY        _O_RDONLY
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:34:0: note: this is the location of the previous definition
+ #define O_RDONLY 0  /* +1 == FREAD */
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:153:0: error: "O_WRONLY" redefined [-Werror]
+ #define O_WRONLY        _O_WRONLY
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:35:0: note: this is the location of the previous definition
+ #define O_WRONLY 1  /* +1 == FWRITE */
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:154:0: error: "O_RDWR" redefined [-Werror]
+ #define O_RDWR          _O_RDWR
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:36:0: note: this is the location of the previous definition
+ #define O_RDWR  2  /* +1 == FREAD|FWRITE */
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:155:0: error: "O_APPEND" redefined [-Werror]
+ #define O_APPEND        _O_APPEND
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:37:0: note: this is the location of the previous definition
+ #define O_APPEND _FAPPEND
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:157:0: error: "O_CREAT" redefined [-Werror]
+ #define O_CREAT         _O_CREAT
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:38:0: note: this is the location of the previous definition
+ #define O_CREAT  _FCREAT
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:158:0: error: "O_TRUNC" redefined [-Werror]
+ #define O_TRUNC         _O_TRUNC
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:39:0: note: this is the location of the previous definition
+ #define O_TRUNC  _FTRUNC
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:159:0: error: "O_EXCL" redefined [-Werror]
+ #define O_EXCL          _O_EXCL
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:40:0: note: this is the location of the previous definition
+ #define O_EXCL  _FEXCL
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:161:0: error: "O_TEXT" redefined [-Werror]
+ #define O_TEXT          _O_TEXT
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:53:0: note: this is the location of the previous definition
+ #define O_TEXT  _FTEXT
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:162:0: error: "O_BINARY" redefined [-Werror]
+ #define O_BINARY        _O_BINARY
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:52:0: note: this is the location of the previous definition
+ #define O_BINARY _FBINARY
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:165:0: error: "O_NOINHERIT" redefined [-Werror]
+ #define O_NOINHERIT     _O_NOINHERIT
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:54:0: note: this is the location of the previous definition
+ #define O_NOINHERIT _FNOINHERIT
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:168:0: error: "O_NDELAY" redefined [-Werror]
+ #define O_NDELAY 0
+ ^
+In file included from ../../repo/compat/os/mswindows.h:48:0,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/fcntl.h:15:0: note: this is the location of the previous definition
+ #define O_NDELAY _FNDELAY
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:170:0: error: "S_IFMT" redefined [-Werror]
+ #define S_IFMT   _S_IFMT
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:91:0: note: this is the location of the previous definition
+ #define S_IFMT  _IFMT
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:171:0: error: "S_IFDIR" redefined [-Werror]
+ #define S_IFDIR  _S_IFDIR
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:92:0: note: this is the location of the previous definition
+ #define S_IFDIR  _IFDIR
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:172:0: error: "S_IFCHR" redefined [-Werror]
+ #define S_IFCHR  _S_IFCHR
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:93:0: note: this is the location of the previous definition
+ #define S_IFCHR  _IFCHR
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:173:0: error: "S_IFREG" redefined [-Werror]
+ #define S_IFREG  _S_IFREG
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:95:0: note: this is the location of the previous definition
+ #define S_IFREG  _IFREG
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:174:0: error: "S_IREAD" redefined [-Werror]
+ #define S_IREAD  _S_IREAD
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:85:0: note: this is the location of the previous definition
+ #define S_IREAD  0000400 /* read permission, owner */
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:175:0: error: "S_IWRITE" redefined [-Werror]
+ #define S_IWRITE _S_IWRITE
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:86:0: note: this is the location of the previous definition
+ #define S_IWRITE  0000200 /* write permission, owner */
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:176:0: error: "S_IEXEC" redefined [-Werror]
+ #define S_IEXEC  _S_IEXEC
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:87:0: note: this is the location of the previous definition
+ #define S_IEXEC  0000100 /* execute/search permission, owner */
+ ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:178:0: error: "S_IRWXO" redefined [-Werror]
+ #define S_IRWXO 007
+ ^
+In file included from /usr/include/sys/_default_fcntl.h:188:0,
+                 from /usr/include/sys/fcntl.h:3,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/stat.h:121:0: note: this is the location of the previous definition
+ #define S_IRWXO  (S_IROTH | S_IWOTH | S_IXOTH)
+ ^
+In file included from /usr/include/w32api/winsock2.h:56:0,
+                 from /usr/include/w32api/ws2spi.h:13,
+                 from ../../repo/compat/os/mswindows.h:273,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/w32api/psdk_inc/_fd_types.h:100:2: error: #warning "fd_set and associated macros have been defined in sys/types.      This can cause runtime problems with W32 sockets" [-Werror=cpp]
+ #warning "fd_set and associated macros have been defined in sys/types.  \
+  ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:384:0: error: "FOPEN" redefined [-Werror]
+ #define FOPEN           0x01    /* file handle open */
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:98:0: note: this is the location of the previous definition
+ #define FOPEN  _FOPEN
+ ^
+In file included from /usr/include/w32api/ws2spi.h:13:0,
+                 from ../../repo/compat/os/mswindows.h:273,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/w32api/winsock2.h:995:123: error: declaration of C function 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, PTIMEVAL)' conflicts with
+   WINSOCK_API_LINKAGE int WSAAPI select(int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,const PTIMEVAL timeout);
+                                                                                                                           ^
+In file included from ../../repo/compat/types.h:77:0,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/select.h:31:5: error: previous declaration 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, timeval*)' here
+ int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+     ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: In function 'int close(int)':
+../../repo/compat/os/mswindows.h:413:24: error: '_free_osfhnd' was not declared in this scope
+         _free_osfhnd(fd);
+                        ^
+../../repo/compat/os/mswindows.h:381:23: error: '__pioinfo' was not declared in this scope
+ #define _pioinfo(i) ( __pioinfo[(i) >> IOINFO_L2E] + ((i) & (IOINFO_ARRAY_ELTS - 1)) )
+                       ^
+../../repo/compat/os/mswindows.h:382:23: note: in expansion of macro '_pioinfo'
+ #define _osfile(i)  ( _pioinfo(i)->osfile )
+                       ^
+../../repo/compat/os/mswindows.h:414:9: note: in expansion of macro '_osfile'
+         _osfile(fd) = 0;
+         ^
+../../repo/compat/os/mswindows.h:417:25: error: '_close' was not declared in this scope
+         return _close(fd);
+                         ^
+../../repo/compat/os/mswindows.h: In function 'int read(int, void*, size_t)':
+../../repo/compat/os/mswindows.h:447:48: error: '_read' was not declared in this scope
+         return _read(fd, buf, (unsigned int)siz);
+                                                ^
+../../repo/compat/os/mswindows.h: In function 'int write(int, const void*, size_t)':
+../../repo/compat/os/mswindows.h:460:35: error: '_write' was not declared in this scope
+         return _write(fd, buf, siz);
+                                   ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: At global scope:
+../../repo/compat/os/mswindows.h:490:36: error: 'socklen_t' has not been declared
+ accept(int s, struct sockaddr * a, socklen_t * l)
+                                    ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::accept(int, sockaddr*, int*)':
+../../repo/compat/os/mswindows.h:498:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+../../repo/compat/os/mswindows.h: At global scope:
+../../repo/compat/os/mswindows.h:503:40: error: 'socklen_t' has not been declared
+ bind(int s, const struct sockaddr * n, socklen_t l)
+                                        ^
+../../repo/compat/os/mswindows.h:514:43: error: 'socklen_t' has not been declared
+ connect(int s, const struct sockaddr * n, socklen_t l)
+                                           ^
+../../repo/compat/os/mswindows.h:555:41: error: 'socklen_t' has not been declared
+ getsockname(int s, struct sockaddr * n, socklen_t * l)
+                                         ^
+../../repo/compat/os/mswindows.h:578:43: error: 'socklen_t' has not been declared
+ getsockopt(int s, int l, int o, void * v, socklen_t * n)
+                                           ^
+../../repo/compat/os/mswindows.h:637:66: error: 'socklen_t' has not been declared
+ recvfrom(int s, void * b, size_t l, int f, struct sockaddr * fr, socklen_t * fl)
+                                                                  ^
+../../repo/compat/os/mswindows.h:674:75: error: 'socklen_t' has not been declared
+ sendto(int s, const void * b, size_t l, int f, const struct sockaddr * t, socklen_t tl)
+                                                                           ^
+../../repo/compat/os/mswindows.h:686:52: error: 'socklen_t' has not been declared
+ setsockopt(SOCKET s, int l, int o, const void * v, socklen_t n)
+                                                    ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::socket(int, int, int)':
+../../repo/compat/os/mswindows.h:720:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: In function 'int Squid::pipe(int*)':
+../../repo/compat/os/mswindows.h:162:25: error: '_O_BINARY' was not declared in this scope
+ #define O_BINARY        _O_BINARY
+                         ^
+/usr/include/sys/_default_fcntl.h:67:19: note: in expansion of macro 'O_BINARY'
+ #define _O_BINARY O_BINARY
+                   ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:727:39: error: '_pipe' was not declared in this scope
+     return _pipe(pipefd,4096,_O_BINARY);
+                                       ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::WSASocket(int, int, int, LPWSAPROTOCOL_INFO, GROUP, DWORD)':
+../../repo/compat/os/mswindows.h:772:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: At global scope:
+../../repo/compat/os/mswindows.h:841:54: error: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Werror=shadow]
+ SQUIDCEXTERN int statfs(const char *, struct statfs *);
+                                                      ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:401:1: error: previous declaration of 'int close(int)' with 'C++' linkage
+ close(int fd)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:30:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(close, (int __fildes ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:867:1: error: previous declaration of 'gid_t getegid()' with 'C++' linkage
+ getegid(void)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:87:9: error: conflicts with new declaration with 'C' linkage
+ gid_t   _EXFUN(getegid, (void ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:847:1: error: previous declaration of 'uid_t geteuid()' with 'C++' linkage
+ geteuid(void)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:88:9: error: conflicts with new declaration with 'C' linkage
+ uid_t   _EXFUN(geteuid, (void ));
+         ^
+/usr/include/sys/unistd.h:89:9: error: new declaration 'gid_t getgid()'
+ gid_t   _EXFUN(getgid, (void ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:877:1: error: ambiguates old declaration 'int getgid()'
+ getgid(void)
+ ^
+../../repo/compat/os/mswindows.h:857:1: error: previous declaration of 'uid_t getuid()' with 'C++' linkage
+ getuid(void)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:112:9: error: conflicts with new declaration with 'C' linkage
+ uid_t   _EXFUN(getuid, (void ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:725:1: error: previous declaration of 'int Squid::pipe(int*)' with 'C++' linkage
+ pipe(int pipefd[2])
+ ^
+../../repo/compat/os/mswindows.h:729:30: error: conflicts with new declaration with 'C' linkage
+ #define pipe(a) Squid::pipe(a)
+                              ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:438:1: error: previous declaration of 'int read(int, void*, size_t)' with 'C++' linkage
+ read(int fd, void * buf, size_t siz)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:149:25: error: conflicts with new declaration with 'C' linkage
+ _READ_WRITE_RETURN_TYPE _EXFUN(read, (int __fd, void *__buf, size_t __nbyte ));
+                         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:872:1: error: previous declaration of 'int setegid(gid_t)' with 'C++' linkage
+ setegid (gid_t egid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:161:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(setegid, (gid_t __gid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:852:1: error: previous declaration of 'int seteuid(uid_t)' with 'C++' linkage
+ seteuid (uid_t euid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:162:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(seteuid, (uid_t __uid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:882:1: error: previous declaration of 'int setgid(gid_t)' with 'C++' linkage
+ setgid (gid_t gid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:164:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(setgid, (gid_t __gid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:862:1: error: previous declaration of 'int setuid(uid_t)' with 'C++' linkage
+ setuid (uid_t uid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:177:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(setuid, (uid_t __uid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:148:23: error: '__cdecl__' attribute only applies to function types [-Werror=attributes]
+ #define sleep(t) Sleep((t)*1000)
+                       ^
+../../repo/compat/os/mswindows.h:148:23: error: 'unsigned int Sleep' redeclared as different kind of symbol
+In file included from /usr/include/w32api/winbase.h:35:0,
+                 from /usr/include/w32api/windows.h:70,
+                 from /usr/include/w32api/winsock2.h:23,
+                 from /usr/include/w32api/ws2spi.h:13,
+                 from ../../repo/compat/os/mswindows.h:273,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/w32api/synchapi.h:127:26: error: previous declaration of 'void Sleep(DWORD)'
+   WINBASEAPI VOID WINAPI Sleep (DWORD dwMilliseconds);
+                          ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:182:10: error: expected primary-expression before 'unsigned'
+ unsigned _EXFUN(sleep, (unsigned int __seconds ));
+          ^
+/usr/include/sys/unistd.h:182:10: error: expected ')' before 'unsigned'
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:451:1: error: previous declaration of 'int write(int, const void*, size_t)' with 'C++' linkage
+ write(int fd, const void * buf, size_t siz)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:194:25: error: conflicts with new declaration with 'C' linkage
+ _READ_WRITE_RETURN_TYPE _EXFUN(write, (int __fd, const void *__buf, size_t __nbyte ));
+                         ^
+cc1plus: all warnings being treated as errors
+Makefile:898: recipe for target 'assert.lo' failed
+make[1]: *** [assert.lo] Error 1
+make[1]: Leaving directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+Makefile:562: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
