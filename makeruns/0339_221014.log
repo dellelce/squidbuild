@@ -1,0 +1,283 @@
+Making all in compat
+make[1]: Entering directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H  -I../../repo -I../../repo/include -I../../repo/lib -I../../repo/src -I../include   -I../../repo/libltdl   -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c -o assert.lo ../../repo/compat/assert.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I../../repo -I../../repo/include -I../../repo/lib -I../../repo/src -I../include -I../../repo/libltdl -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c ../../repo/compat/assert.cc  -DDLL_EXPORT -DPIC -o .libs/assert.o
+In file included from /usr/include/w32api/winsock2.h:56:0,
+                 from /usr/include/w32api/ws2spi.h:13,
+                 from ../../repo/compat/os/mswindows.h:281,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/w32api/psdk_inc/_fd_types.h:100:2: error: #warning "fd_set and associated macros have been defined in sys/types.      This can cause runtime problems with W32 sockets" [-Werror=cpp]
+ #warning "fd_set and associated macros have been defined in sys/types.  \
+  ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:392:0: error: "FOPEN" redefined [-Werror]
+ #define FOPEN           0x01    /* file handle open */
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from ../../repo/compat/os/mswindows.h:48,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:98:0: note: this is the location of the previous definition
+ #define FOPEN  _FOPEN
+ ^
+In file included from /usr/include/w32api/ws2spi.h:13:0,
+                 from ../../repo/compat/os/mswindows.h:281,
+                 from ../../repo/compat/compat.h:65,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/w32api/winsock2.h:995:123: error: declaration of C function 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, PTIMEVAL)' conflicts with
+   WINSOCK_API_LINKAGE int WSAAPI select(int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,const PTIMEVAL timeout);
+                                                                                                                           ^
+In file included from ../../repo/compat/types.h:77:0,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/select.h:31:5: error: previous declaration 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, timeval*)' here
+ int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+     ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: In function 'int close(int)':
+../../repo/compat/os/mswindows.h:421:24: error: '_free_osfhnd' was not declared in this scope
+         _free_osfhnd(fd);
+                        ^
+../../repo/compat/os/mswindows.h:389:23: error: '__pioinfo' was not declared in this scope
+ #define _pioinfo(i) ( __pioinfo[(i) >> IOINFO_L2E] + ((i) & (IOINFO_ARRAY_ELTS - 1)) )
+                       ^
+../../repo/compat/os/mswindows.h:390:23: note: in expansion of macro '_pioinfo'
+ #define _osfile(i)  ( _pioinfo(i)->osfile )
+                       ^
+../../repo/compat/os/mswindows.h:422:9: note: in expansion of macro '_osfile'
+         _osfile(fd) = 0;
+         ^
+../../repo/compat/os/mswindows.h:425:25: error: '_close' was not declared in this scope
+         return _close(fd);
+                         ^
+../../repo/compat/os/mswindows.h: In function 'int read(int, void*, size_t)':
+../../repo/compat/os/mswindows.h:455:48: error: '_read' was not declared in this scope
+         return _read(fd, buf, (unsigned int)siz);
+                                                ^
+../../repo/compat/os/mswindows.h: In function 'int write(int, const void*, size_t)':
+../../repo/compat/os/mswindows.h:468:35: error: '_write' was not declared in this scope
+         return _write(fd, buf, siz);
+                                   ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: At global scope:
+../../repo/compat/os/mswindows.h:498:36: error: 'socklen_t' has not been declared
+ accept(int s, struct sockaddr * a, socklen_t * l)
+                                    ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::accept(int, sockaddr*, int*)':
+../../repo/compat/os/mswindows.h:506:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+../../repo/compat/os/mswindows.h: At global scope:
+../../repo/compat/os/mswindows.h:511:40: error: 'socklen_t' has not been declared
+ bind(int s, const struct sockaddr * n, socklen_t l)
+                                        ^
+../../repo/compat/os/mswindows.h:522:43: error: 'socklen_t' has not been declared
+ connect(int s, const struct sockaddr * n, socklen_t l)
+                                           ^
+../../repo/compat/os/mswindows.h:563:41: error: 'socklen_t' has not been declared
+ getsockname(int s, struct sockaddr * n, socklen_t * l)
+                                         ^
+../../repo/compat/os/mswindows.h:586:43: error: 'socklen_t' has not been declared
+ getsockopt(int s, int l, int o, void * v, socklen_t * n)
+                                           ^
+../../repo/compat/os/mswindows.h:645:66: error: 'socklen_t' has not been declared
+ recvfrom(int s, void * b, size_t l, int f, struct sockaddr * fr, socklen_t * fl)
+                                                                  ^
+../../repo/compat/os/mswindows.h:682:75: error: 'socklen_t' has not been declared
+ sendto(int s, const void * b, size_t l, int f, const struct sockaddr * t, socklen_t tl)
+                                                                           ^
+../../repo/compat/os/mswindows.h:694:52: error: 'socklen_t' has not been declared
+ setsockopt(SOCKET s, int l, int o, const void * v, socklen_t n)
+                                                    ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::socket(int, int, int)':
+../../repo/compat/os/mswindows.h:728:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::pipe(int*)':
+../../repo/compat/os/mswindows.h:735:39: error: '_pipe' was not declared in this scope
+     return _pipe(pipefd,4096,_O_BINARY);
+                                       ^
+../../repo/compat/os/mswindows.h: In function 'int Squid::WSASocket(int, int, int, LPWSAPROTOCOL_INFO, GROUP, DWORD)':
+../../repo/compat/os/mswindows.h:780:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h: At global scope:
+../../repo/compat/os/mswindows.h:849:54: error: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Werror=shadow]
+ SQUIDCEXTERN int statfs(const char *, struct statfs *);
+                                                      ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:409:1: error: previous declaration of 'int close(int)' with 'C++' linkage
+ close(int fd)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:30:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(close, (int __fildes ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:875:1: error: previous declaration of 'gid_t getegid()' with 'C++' linkage
+ getegid(void)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:87:9: error: conflicts with new declaration with 'C' linkage
+ gid_t   _EXFUN(getegid, (void ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:855:1: error: previous declaration of 'uid_t geteuid()' with 'C++' linkage
+ geteuid(void)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:88:9: error: conflicts with new declaration with 'C' linkage
+ uid_t   _EXFUN(geteuid, (void ));
+         ^
+/usr/include/sys/unistd.h:89:9: error: new declaration 'gid_t getgid()'
+ gid_t   _EXFUN(getgid, (void ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:885:1: error: ambiguates old declaration 'int getgid()'
+ getgid(void)
+ ^
+../../repo/compat/os/mswindows.h:865:1: error: previous declaration of 'uid_t getuid()' with 'C++' linkage
+ getuid(void)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:112:9: error: conflicts with new declaration with 'C' linkage
+ uid_t   _EXFUN(getuid, (void ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:733:1: error: previous declaration of 'int Squid::pipe(int*)' with 'C++' linkage
+ pipe(int pipefd[2])
+ ^
+../../repo/compat/os/mswindows.h:737:30: error: conflicts with new declaration with 'C' linkage
+ #define pipe(a) Squid::pipe(a)
+                              ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:446:1: error: previous declaration of 'int read(int, void*, size_t)' with 'C++' linkage
+ read(int fd, void * buf, size_t siz)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:149:25: error: conflicts with new declaration with 'C' linkage
+ _READ_WRITE_RETURN_TYPE _EXFUN(read, (int __fd, void *__buf, size_t __nbyte ));
+                         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:880:1: error: previous declaration of 'int setegid(gid_t)' with 'C++' linkage
+ setegid (gid_t egid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:161:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(setegid, (gid_t __gid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:860:1: error: previous declaration of 'int seteuid(uid_t)' with 'C++' linkage
+ seteuid (uid_t euid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:162:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(seteuid, (uid_t __uid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:890:1: error: previous declaration of 'int setgid(gid_t)' with 'C++' linkage
+ setgid (gid_t gid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:164:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(setgid, (gid_t __gid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:870:1: error: previous declaration of 'int setuid(uid_t)' with 'C++' linkage
+ setuid (uid_t uid)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:177:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(setuid, (uid_t __uid ));
+         ^
+In file included from ../../repo/compat/compat.h:65:0,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+../../repo/compat/os/mswindows.h:459:1: error: previous declaration of 'int write(int, const void*, size_t)' with 'C++' linkage
+ write(int fd, const void * buf, size_t siz)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from ../../repo/compat/types.h:59,
+                 from ../../repo/compat/compat.h:51,
+                 from ../../repo/include/squid.h:66,
+                 from ../../repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:194:25: error: conflicts with new declaration with 'C' linkage
+ _READ_WRITE_RETURN_TYPE _EXFUN(write, (int __fd, const void *__buf, size_t __nbyte ));
+                         ^
+cc1plus: all warnings being treated as errors
+Makefile:898: recipe for target 'assert.lo' failed
+make[1]: *** [assert.lo] Error 1
+make[1]: Leaving directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+Makefile:562: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
