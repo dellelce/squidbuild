@@ -29,7 +29,7 @@
 #define DEFAULT_FD_SETSIZE 64
 
 /* The install prefix */
-#define DEFAULT_PREFIX /home/antonio/src/web/squid/install
+#define DEFAULT_PREFIX 
 
 /* Enable following X-Forwarded-For headers */
 #define FOLLOW_X_FORWARDED_FOR 1
@@ -1272,7 +1272,7 @@
 #define SQUID_BUILD_INFO ""
 
 /* configure command line used to configure Squid */
-#define SQUID_CONFIGURE_OPTIONS " '--prefix=/home/antonio/src/web/squid/install' --enable-ltdl-convenience"
+#define SQUID_CONFIGURE_OPTIONS " '--prefix=' --enable-ltdl-convenience"
 
 /* UDP receive buffer size */
 #define SQUID_DETECT_UDP_SO_RCVBUF 65535

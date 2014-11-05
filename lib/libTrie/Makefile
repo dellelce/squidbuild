@@ -15,7 +15,7 @@
 
 
 
-VPATH = ../../../repo/lib/libTrie
+VPATH = /home/antonio/src/web/squid/repo/lib/libTrie
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
   case $${target_option-} in \
@@ -649,9 +649,9 @@ XMLLIB =
 XTRA_LIBS = 
 XTRA_OBJS = 
 abs_builddir = /home/antonio/src/web/squid/build_repo/lib/libTrie
-abs_srcdir = /home/antonio/src/web/squid/build_repo/../repo/lib/libTrie
+abs_srcdir = /home/antonio/src/web/squid/repo/lib/libTrie
 abs_top_builddir = /home/antonio/src/web/squid/build_repo
-abs_top_srcdir = /home/antonio/src/web/squid/build_repo/../repo
+abs_top_srcdir = /home/antonio/src/web/squid/repo
 ac_ct_AR = 
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -694,19 +694,19 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/antonio/src/web/squid/install
+prefix = 
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = ../../../repo/lib/libTrie
+srcdir = /home/antonio/src/web/squid/repo/lib/libTrie
 subdirs =  libltdl
 sys_symbol_underscore = no
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../../
 top_builddir = ../..
-top_srcdir = ../../../repo
+top_srcdir = /home/antonio/src/web/squid/repo
 AM_CFLAGS = $(SQUID_CFLAGS)
 AM_CXXFLAGS = $(SQUID_CXXFLAGS)
 CLEANFILES = testHeaders

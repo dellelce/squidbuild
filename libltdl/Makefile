@@ -17,7 +17,7 @@
 #####
 
 
-VPATH = ../../repo/libltdl
+VPATH = /home/antonio/src/web/squid/repo/libltdl
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
   case $${target_option-} in \
@@ -364,9 +364,9 @@ SHELL = /bin/sh
 STRIP = strip
 VERSION = 2.4.2
 abs_builddir = /home/antonio/src/web/squid/build_repo/libltdl
-abs_srcdir = /home/antonio/src/web/squid/build_repo/libltdl/../../repo/libltdl
+abs_srcdir = /home/antonio/src/web/squid/repo/libltdl
 abs_top_builddir = /home/antonio/src/web/squid/build_repo/libltdl
-abs_top_srcdir = /home/antonio/src/web/squid/build_repo/libltdl/../../repo/libltdl
+abs_top_srcdir = /home/antonio/src/web/squid/repo/libltdl
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -404,18 +404,18 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/antonio/src/web/squid/install
+prefix = 
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = ../../repo/libltdl
+srcdir = /home/antonio/src/web/squid/repo/libltdl
 sys_symbol_underscore = yes
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
-top_srcdir = ../../repo/libltdl
+top_srcdir = /home/antonio/src/web/squid/repo/libltdl
 ACLOCAL_AMFLAGS = -I m4
 AUTOMAKE_OPTIONS = foreign
 
