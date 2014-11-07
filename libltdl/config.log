@@ -31,6 +31,7 @@ PATH: /home/antonio/src/local/mkwiki/mkwiki
 PATH: /home/antonio/bin
 PATH: /usr/local/bin
 PATH: /usr/bin
+PATH: /bin
 PATH: /cygdrive/c/Program Files (x86)/Intel/iCLS Client
 PATH: /cygdrive/c/Program Files/Intel/iCLS Client
 PATH: /cygdrive/c/WINDOWS/system32
@@ -48,9 +49,6 @@ PATH: /cygdrive/c/Program Files (x86)/git/cmd
 PATH: /cygdrive/c/apps/heroku/bin
 PATH: /cygdrive/c/Program Files/OpenVPN/bin
 PATH: /cygdrive/c/Program Files/TortoiseHg
-PATH: /cygdrive/c/Program Files (x86)/Nmap
-PATH: /home/antonio/scripts
-PATH: /c/mariadb/mariadb/bin
 PATH: /home/antonio/scripts
 PATH: /c/mariadb/mariadb/bin
 
@@ -402,7 +400,7 @@ configure:12014: $? = 0
 configure:12014: result: yes
 configure:12028: checking for shl_load
 configure:12028: gcc -o conftest.exe -g -O2   conftest.c  >&5
-/tmp/ccilcCtJ.o: In function `main':
+/tmp/ccFL7fHJ.o: In function `main':
 /home/antonio/src/web/squid/build_repo/libltdl/conftest.c:62: undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:12028: $? = 1
