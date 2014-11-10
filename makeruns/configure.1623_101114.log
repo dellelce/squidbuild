@@ -1,0 +1,4 @@
+ cd /home/antonio/src/web/squid/repo && /bin/sh /home/antonio/src/web/squid/repo/cfgaux/missing automake-1.14 --foreign Makefile
+/bin/sh: line 10: cd: /home/antonio/src/web/squid/repo: No such file or directory
+Makefile:499: recipe for target '/home/antonio/src/web/squid/repo/Makefile.in' failed
+make: *** [/home/antonio/src/web/squid/repo/Makefile.in] Error 1
