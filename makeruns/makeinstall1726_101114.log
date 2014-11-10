@@ -1,0 +1,143 @@
+Making install in compat
+make[1]: Entering directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H  -I/home/u6020839/src/web/squid/repo -I/home/u6020839/src/web/squid/repo/include -I/home/u6020839/src/web/squid/repo/lib -I/home/u6020839/src/web/squid/repo/src -I../include      -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c -o assert.lo /home/u6020839/src/web/squid/repo/compat/assert.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I/home/u6020839/src/web/squid/repo -I/home/u6020839/src/web/squid/repo/include -I/home/u6020839/src/web/squid/repo/lib -I/home/u6020839/src/web/squid/repo/src -I../include -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c /home/u6020839/src/web/squid/repo/compat/assert.cc  -DDLL_EXPORT -DPIC -o .libs/assert.o
+In file included from /usr/include/w32api/winsock2.h:56:0,
+                 from /usr/include/w32api/ws2spi.h:13,
+                 from /home/u6020839/src/web/squid/repo/compat/os/mswindows.h:281,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:65,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/w32api/psdk_inc/_fd_types.h:100:2: error: #warning "fd_set and associated macros have been defined in sys/types.      This can cause runtime problems with W32 sockets" [-Werror=cpp]
+ #warning "fd_set and associated macros have been defined in sys/types.  \
+  ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:392:0: error: "FOPEN" redefined [-Werror]
+ #define FOPEN           0x01    /* file handle open */
+ ^
+In file included from /usr/include/sys/fcntl.h:3:0,
+                 from /usr/include/fcntl.h:14,
+                 from /home/u6020839/src/web/squid/repo/compat/os/mswindows.h:48,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:65,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/sys/_default_fcntl.h:98:0: note: this is the location of the previous definition
+ #define FOPEN  _FOPEN
+ ^
+In file included from /usr/include/w32api/ws2spi.h:13:0,
+                 from /home/u6020839/src/web/squid/repo/compat/os/mswindows.h:281,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:65,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/w32api/winsock2.h:995:123: error: declaration of C function 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, PTIMEVAL)' conflicts with
+   WINSOCK_API_LINKAGE int WSAAPI select(int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,const PTIMEVAL timeout);
+                                                                                                                           ^
+In file included from /home/u6020839/src/web/squid/repo/compat/types.h:77:0,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:51,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/sys/select.h:31:5: error: previous declaration 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, timeval*)' here
+ int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+     ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: In function 'int close(int)':
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:421:24: error: '_free_osfhnd' was not declared in this scope
+         _free_osfhnd(fd);
+                        ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:389:23: error: '__pioinfo' was not declared in this scope
+ #define _pioinfo(i) ( __pioinfo[(i) >> IOINFO_L2E] + ((i) & (IOINFO_ARRAY_ELTS - 1)) )
+                       ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:390:23: note: in expansion of macro '_pioinfo'
+ #define _osfile(i)  ( _pioinfo(i)->osfile )
+                       ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:422:9: note: in expansion of macro '_osfile'
+         _osfile(fd) = 0;
+         ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:425:25: error: '_close' was not declared in this scope
+         return _close(fd);
+                         ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: At global scope:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:501:36: error: 'socklen_t' has not been declared
+ accept(int s, struct sockaddr * a, socklen_t * l)
+                                    ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: In function 'int Squid::accept(int, sockaddr*, int*)':
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:509:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: At global scope:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:514:40: error: 'socklen_t' has not been declared
+ bind(int s, const struct sockaddr * n, socklen_t l)
+                                        ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:525:43: error: 'socklen_t' has not been declared
+ connect(int s, const struct sockaddr * n, socklen_t l)
+                                           ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:566:41: error: 'socklen_t' has not been declared
+ getsockname(int s, struct sockaddr * n, socklen_t * l)
+                                         ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:589:43: error: 'socklen_t' has not been declared
+ getsockopt(int s, int l, int o, void * v, socklen_t * n)
+                                           ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:648:66: error: 'socklen_t' has not been declared
+ recvfrom(int s, void * b, size_t l, int f, struct sockaddr * fr, socklen_t * fl)
+                                                                  ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:685:75: error: 'socklen_t' has not been declared
+ sendto(int s, const void * b, size_t l, int f, const struct sockaddr * t, socklen_t tl)
+                                                                           ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:697:52: error: 'socklen_t' has not been declared
+ setsockopt(SOCKET s, int l, int o, const void * v, socklen_t n)
+                                                    ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: In function 'int Squid::socket(int, int, int)':
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:731:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: In function 'int Squid::pipe(int*)':
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:738:39: error: '_pipe' was not declared in this scope
+     return _pipe(pipefd,4096,_O_BINARY);
+                                       ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: In function 'int Squid::WSASocket(int, int, int, LPWSAPROTOCOL_INFO, GROUP, DWORD)':
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:783:41: error: '_open_osfhandle' was not declared in this scope
+         return _open_osfhandle(result, 0);
+                                         ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h: At global scope:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:852:54: error: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Werror=shadow]
+ SQUIDCEXTERN int statfs(const char *, struct statfs *);
+                                                      ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:409:1: error: previous declaration of 'int close(int)' with 'C++' linkage
+ close(int fd)
+ ^
+In file included from /usr/include/sys/types.h:20:0,
+                 from /home/u6020839/src/web/squid/repo/compat/types.h:59,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:51,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/sys/unistd.h:30:9: error: conflicts with new declaration with 'C' linkage
+ int     _EXFUN(close, (int __fildes ));
+         ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:736:1: error: previous declaration of 'int Squid::pipe(int*)' with 'C++' linkage
+ pipe(int pipefd[2])
+ ^
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:740:30: error: conflicts with new declaration with 'C' linkage
+ #define pipe(a) Squid::pipe(a)
+                              ^
+cc1plus: all warnings being treated as errors
+Makefile:898: recipe for target 'assert.lo' failed
+make[1]: *** [assert.lo] Error 1
+make[1]: Leaving directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+Makefile:562: recipe for target 'install-recursive' failed
+make: *** [install-recursive] Error 1
