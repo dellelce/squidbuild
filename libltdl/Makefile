@@ -17,7 +17,7 @@
 #####
 
 
-VPATH = /home/antonio/src/web/squid/repo/libltdl
+VPATH = /home/u6020839/src/web/squid/repo/libltdl
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
   case $${target_option-} in \
@@ -291,15 +291,15 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/antonio/src/web/squid/repo/libltdl/config/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/u6020839/src/web/squid/repo/libltdl/config/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 ARGZ_H = 
 AS = as
-AUTOCONF = ${SHELL} /home/antonio/src/web/squid/repo/libltdl/config/missing autoconf
-AUTOHEADER = ${SHELL} /home/antonio/src/web/squid/repo/libltdl/config/missing autoheader
-AUTOMAKE = ${SHELL} /home/antonio/src/web/squid/repo/libltdl/config/missing automake-1.14
+AUTOCONF = ${SHELL} /home/u6020839/src/web/squid/repo/libltdl/config/missing autoconf
+AUTOHEADER = ${SHELL} /home/u6020839/src/web/squid/repo/libltdl/config/missing autoheader
+AUTOMAKE = ${SHELL} /home/u6020839/src/web/squid/repo/libltdl/config/missing automake-1.14
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -340,7 +340,7 @@ LTLIBOBJS =
 LT_CONFIG_H = config.h
 LT_DLLOADERS =  dlopen.la loadlibrary.la
 LT_DLPREOPEN = -dlpreopen dlopen.la -dlpreopen loadlibrary.la 
-MAKEINFO = ${SHELL} /home/antonio/src/web/squid/repo/libltdl/config/missing makeinfo
+MAKEINFO = ${SHELL} /home/u6020839/src/web/squid/repo/libltdl/config/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -363,10 +363,10 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = strip
 VERSION = 2.4.2
-abs_builddir = /home/antonio/src/web/squid/build_repo/libltdl
-abs_srcdir = /home/antonio/src/web/squid/repo/libltdl
-abs_top_builddir = /home/antonio/src/web/squid/build_repo/libltdl
-abs_top_srcdir = /home/antonio/src/web/squid/repo/libltdl
+abs_builddir = /home/u6020839/src/web/squid/build_repo/libltdl
+abs_srcdir = /home/u6020839/src/web/squid/repo/libltdl
+abs_top_builddir = /home/u6020839/src/web/squid/build_repo/libltdl
+abs_top_srcdir = /home/u6020839/src/web/squid/repo/libltdl
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -395,7 +395,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/antonio/src/web/squid/repo/libltdl/config/install-sh
+install_sh = ${SHELL} /home/u6020839/src/web/squid/repo/libltdl/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -409,13 +409,13 @@ program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /home/antonio/src/web/squid/repo/libltdl
+srcdir = /home/u6020839/src/web/squid/repo/libltdl
 sys_symbol_underscore = yes
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
-top_srcdir = /home/antonio/src/web/squid/repo/libltdl
+top_srcdir = /home/u6020839/src/web/squid/repo/libltdl
 ACLOCAL_AMFLAGS = -I m4
 AUTOMAKE_OPTIONS = foreign
 

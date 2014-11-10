@@ -141,7 +141,7 @@
 #define HAVE_CMSGHDR 1
 
 /* Define to 1 if you have the <com_err.h> header file. */
-#define HAVE_COM_ERR_H 1
+/* #undef HAVE_COM_ERR_H */
 
 /* Define to 1 if CMSG_SPACE is constant */
 #define HAVE_CONSTANT_CMSG_SPACE 1
@@ -178,10 +178,10 @@
 #define HAVE_CXX11 1
 
 /* Define to 1 if you have the <db_185.h> header file. */
-#define HAVE_DB_185_H 1
+/* #undef HAVE_DB_185_H */
 
 /* Define to 1 if you have the <db.h> header file. */
-#define HAVE_DB_H 1
+/* #undef HAVE_DB_H */
 
 /* Define to 1 if you have the declaration of `cygwin_conv_path', and to 0 if
    you don't. */
@@ -189,7 +189,7 @@
 
 /* Define to 1 if you have the declaration of `krb5_kt_free_entry', and to 0
    if you don't. */
-#define HAVE_DECL_KRB5_KT_FREE_ENTRY 1
+/* #undef HAVE_DECL_KRB5_KT_FREE_ENTRY */
 
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
@@ -220,13 +220,13 @@
 #define HAVE_ERRNO_H 1
 
 /* Define to 1 if you have error_message */
-#define HAVE_ERROR_MESSAGE 1
+/* #undef HAVE_ERROR_MESSAGE */
 
 /* Define to 1 if the system has the type `error_t'. */
 #define HAVE_ERROR_T 1
 
 /* Define to 1 if you have the <et/com_err.h> header file. */
-#define HAVE_ET_COM_ERR_H 1
+/* #undef HAVE_ET_COM_ERR_H */
 
 /* Define to 1 if you have the `eui64_aton' function. */
 /* #undef HAVE_EUI64_ATON */
@@ -298,7 +298,7 @@
 #define HAVE_GETTIMEOFDAY 1
 
 /* Define to 1 if you have krb5_get_init_creds_keytab */
-#define HAVE_GET_INIT_CREDS_KEYTAB 1
+/* #undef HAVE_GET_INIT_CREDS_KEYTAB */
 
 /* Define to 1 if you have the <glib.h> header file. */
 /* #undef HAVE_GLIB_H */
@@ -316,29 +316,29 @@
 #define HAVE_GRP_H 1
 
 /* GSSAPI support */
-#define HAVE_GSSAPI 1
+/* #undef HAVE_GSSAPI */
 
 /* Define to 1 if you have the <gssapi/gssapi_generic.h> header file. */
-#define HAVE_GSSAPI_GSSAPI_GENERIC_H 1
+/* #undef HAVE_GSSAPI_GSSAPI_GENERIC_H */
 
 /* Define to 1 if you have the <gssapi/gssapi.h> header file. */
-#define HAVE_GSSAPI_GSSAPI_H 1
+/* #undef HAVE_GSSAPI_GSSAPI_H */
 
 /* Define to 1 if you have the <gssapi/gssapi_krb5.h> header file. */
-#define HAVE_GSSAPI_GSSAPI_KRB5_H 1
+/* #undef HAVE_GSSAPI_GSSAPI_KRB5_H */
 
 /* Define to 1 if you have the <gssapi.h> header file. */
-#define HAVE_GSSAPI_H 1
+/* #undef HAVE_GSSAPI_H */
 
 /* Define to 1 if you have the `gsskrb5_extract_authz_data_from_sec_context'
    function. */
-#define HAVE_GSSKRB5_EXTRACT_AUTHZ_DATA_FROM_SEC_CONTEXT 1
+/* #undef HAVE_GSSKRB5_EXTRACT_AUTHZ_DATA_FROM_SEC_CONTEXT */
 
 /* Define to 1 if you have gss_map_name_to_any */
-#define HAVE_GSS_MAP_ANY_TO_ANY 1
+/* #undef HAVE_GSS_MAP_ANY_TO_ANY */
 
 /* Define to 1 if you have the `gss_map_name_to_any' function. */
-#define HAVE_GSS_MAP_NAME_TO_ANY 1
+/* #undef HAVE_GSS_MAP_NAME_TO_ANY */
 
 /* Define to 1 if you have Heimdal Kerberos */
 /* #undef HAVE_HEIMDAL_KERBEROS */
@@ -401,55 +401,55 @@
 /* #undef HAVE_KQUEUE */
 
 /* KRB5 support */
-#define HAVE_KRB5 1
+/* #undef HAVE_KRB5 */
 
 /* Define to 1 if you have krb5_get_error_message */
-#define HAVE_KRB5_GET_ERROR_MESSAGE 1
+/* #undef HAVE_KRB5_GET_ERROR_MESSAGE */
 
 /* Define to 1 if you have krb5_get_err_text */
 /* #undef HAVE_KRB5_GET_ERR_TEXT */
 
 /* Define to 1 if you krb5_get_init_creds_free requires krb5_context */
-#define HAVE_KRB5_GET_INIT_CREDS_FREE_CONTEXT 1
+/* #undef HAVE_KRB5_GET_INIT_CREDS_FREE_CONTEXT */
 
 /* Define to 1 if you have krb5_get_init_creds_opt_alloc */
-#define HAVE_KRB5_GET_INIT_CREDS_OPT_ALLOC 1
+/* #undef HAVE_KRB5_GET_INIT_CREDS_OPT_ALLOC */
 
 /* Define to 1 if you have krb5_get_max_time_skew */
 /* #undef HAVE_KRB5_GET_MAX_TIME_SKEW */
 
 /* Define to 1 if you have krb5_get_profile */
-#define HAVE_KRB5_GET_PROFILE 1
+/* #undef HAVE_KRB5_GET_PROFILE */
 
 /* Define to 1 if you have krb5_get_renewed_creds */
-#define HAVE_KRB5_GET_RENEWED_CREDS 1
+/* #undef HAVE_KRB5_GET_RENEWED_CREDS */
 
 /* Define to 1 if you have the <krb5.h> header file. */
-#define HAVE_KRB5_H 1
+/* #undef HAVE_KRB5_H */
 
 /* Define to 1 if you have krb5_kt_free_entry */
-#define HAVE_KRB5_KT_FREE_ENTRY 1
+/* #undef HAVE_KRB5_KT_FREE_ENTRY */
 
 /* Define if kerberos has MEMORY: cache support */
-#define HAVE_KRB5_MEMORY_CACHE 1
+/* #undef HAVE_KRB5_MEMORY_CACHE */
 
 /* Define to 1 if you have krb5_pac */
-#define HAVE_KRB5_PAC 1
+/* #undef HAVE_KRB5_PAC */
 
 /* Define to 1 if you have krb5_principal_get_realm */
 /* #undef HAVE_KRB5_PRINCIPAL_GET_REALM */
 
 /* Define to 1 if you have the <lber.h> header file. */
-#define HAVE_LBER_H 1
+/* #undef HAVE_LBER_H */
 
 /* LDAP support */
-#define HAVE_LDAP 1
+/* #undef HAVE_LDAP */
 
 /* Define to 1 if you have ldapssl_client_init */
 /* #undef HAVE_LDAPSSL_CLIENT_INIT */
 
 /* Define to 1 if you have the <ldap.h> header file. */
-#define HAVE_LDAP_H 1
+/* #undef HAVE_LDAP_H */
 
 /* Define to 1 if you have LDAP_REBINDPROC_CALLBACK */
 /* #undef HAVE_LDAP_REBINDPROC_CALLBACK */
@@ -458,22 +458,22 @@
 /* #undef HAVE_LDAP_REBIND_FUNCTION */
 
 /* Define to 1 if you have LDAP_REBIND_PROC */
-#define HAVE_LDAP_REBIND_PROC 1
+/* #undef HAVE_LDAP_REBIND_PROC */
 
 /* Define to 1 if you have LDAP_SCOPE_DEFAULT */
-#define HAVE_LDAP_SCOPE_DEFAULT 1
+/* #undef HAVE_LDAP_SCOPE_DEFAULT */
 
 /* Define to 1 if you have ldap_start_tls_s */
-#define HAVE_LDAP_START_TLS_S 1
+/* #undef HAVE_LDAP_START_TLS_S */
 
 /* Define to 1 if you have ldap_url_desc2str */
-#define HAVE_LDAP_URL_DESC2STR 1
+/* #undef HAVE_LDAP_URL_DESC2STR */
 
 /* Define to 1 if you have LDAPURLDesc.lud_scheme */
-#define HAVE_LDAP_URL_LUD_SCHEME 1
+/* #undef HAVE_LDAP_URL_LUD_SCHEME */
 
 /* Define to 1 if you have ldap_url_parse */
-#define HAVE_LDAP_URL_PARSE 1
+/* #undef HAVE_LDAP_URL_PARSE */
 
 /* Define to 1 if you have the `cap' library (-lcap). */
 /* #undef HAVE_LIBCAP */
@@ -545,7 +545,7 @@
 #define HAVE_LRAND48 1
 
 /* Define this if a modern libltdl is already installed */
-/* #undef HAVE_LTDL */
+#define HAVE_LTDL 1
 
 /* Define to 1 if you have the <machine/byte_swap.h> header file. */
 /* #undef HAVE_MACHINE_BYTE_SWAP_H */
@@ -590,7 +590,7 @@
 #define HAVE_MEMSET 1
 
 /* Define to 1 if you have MIT Kerberos */
-#define HAVE_MIT_KERBEROS 1
+/* #undef HAVE_MIT_KERBEROS */
 
 /* Define to 1 if you have the `mkstemp' function. */
 #define HAVE_MKSTEMP 1
@@ -665,7 +665,7 @@
 #define HAVE_NETINET_TCP_H 1
 
 /* Define to 1 if you have the <nettle/md5.h> header file. */
-#define HAVE_NETTLE_MD5_H 1
+/* #undef HAVE_NETTLE_MD5_H */
 
 /* Define to 1 if you have the <net/if_arp.h> header file. */
 /* #undef HAVE_NET_IF_ARP_H */
@@ -695,28 +695,28 @@
 #define HAVE_OPENDIR 1
 
 /* OpenLDAP support */
-#define HAVE_OPENLDAP 1
+/* #undef HAVE_OPENLDAP */
 
 /* Define to 1 if you have the <openssl/engine.h> header file. */
-#define HAVE_OPENSSL_ENGINE_H 1
+/* #undef HAVE_OPENSSL_ENGINE_H */
 
 /* Define to 1 if you have the <openssl/err.h> header file. */
-#define HAVE_OPENSSL_ERR_H 1
+/* #undef HAVE_OPENSSL_ERR_H */
 
 /* Define to 1 if you have the <openssl/md5.h> header file. */
-#define HAVE_OPENSSL_MD5_H 1
+/* #undef HAVE_OPENSSL_MD5_H */
 
 /* Define to 1 if you have the <openssl/opensslv.h> header file. */
-#define HAVE_OPENSSL_OPENSSLV_H 1
+/* #undef HAVE_OPENSSL_OPENSSLV_H */
 
 /* Define to 1 if you have the <openssl/ssl.h> header file. */
-#define HAVE_OPENSSL_SSL_H 1
+/* #undef HAVE_OPENSSL_SSL_H */
 
 /* Define to 1 if you have the <openssl/txt_db.h> header file. */
-#define HAVE_OPENSSL_TXT_DB_H 1
+/* #undef HAVE_OPENSSL_TXT_DB_H */
 
 /* Define to 1 if you have the <openssl/x509v3.h> header file. */
-#define HAVE_OPENSSL_X509V3_H 1
+/* #undef HAVE_OPENSSL_X509V3_H */
 
 /* Define to 1 if you have the <ostream> header file. */
 #define HAVE_OSTREAM 1
@@ -740,13 +740,13 @@
 #define HAVE_PRELOADED_SYMBOLS 1
 
 /* Define to 1 if you have profile_get_integer */
-#define HAVE_PROFILE_GET_INTEGER 1
+/* #undef HAVE_PROFILE_GET_INTEGER */
 
 /* Define to 1 if you have the <profile.h> header file. */
-#define HAVE_PROFILE_H 1
+/* #undef HAVE_PROFILE_H */
 
 /* Define to 1 if you have profile_release */
-#define HAVE_PROFILE_RELEASE 1
+/* #undef HAVE_PROFILE_RELEASE */
 
 /* Define to 1 if you have the `psignal' function. */
 #define HAVE_PSIGNAL 1
@@ -809,7 +809,7 @@
 /* #undef HAVE_SASL_H */
 
 /* Define to 1 if you have the <sasl/sasl.h> header file. */
-#define HAVE_SASL_SASL_H 1
+/* #undef HAVE_SASL_SASL_H */
 
 /* Define to 1 if you have the `sched_getaffinity' function. */
 /* #undef HAVE_SCHED_GETAFFINITY */
@@ -883,7 +883,7 @@
 #define HAVE_SOCKLEN_T 1
 
 /* SPNEGO support */
-#define HAVE_SPNEGO 1
+/* #undef HAVE_SPNEGO */
 
 /* Define to 1 if you have the `srand48' function. */
 #define HAVE_SRAND48 1
@@ -1272,7 +1272,7 @@
 #define SQUID_BUILD_INFO ""
 
 /* configure command line used to configure Squid */
-#define SQUID_CONFIGURE_OPTIONS " '--prefix=' --enable-ltdl-convenience"
+#define SQUID_CONFIGURE_OPTIONS " '--prefix='"
 
 /* UDP receive buffer size */
 #define SQUID_DETECT_UDP_SO_RCVBUF 65535

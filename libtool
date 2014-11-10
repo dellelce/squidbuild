@@ -2,7 +2,7 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (squid) 3.4.8
-# Libtool was configured on host antolap3:
+# Libtool was configured on host U6020839-TPL-A:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -10253,7 +10253,7 @@ compiler_lib_search_dirs="/usr/lib/gcc/i686-pc-cygwin/4.8.3 /usr/lib/gcc/i686-pc
 
 # Dependencies to place before and after the objects being linked to
 # create a shared library.
-predep_objects="/usr/lib/gcc/i686-pc-cygwin/4.8.3/crtbeginS.o"
+predep_objects="/usr/lib/gcc/i686-pc-cygwin/4.8.3/crtbegin.o"
 postdep_objects="/usr/lib/gcc/i686-pc-cygwin/4.8.3/crtend.o"
 predeps=""
 postdeps="-lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc"
