@@ -29,6 +29,8 @@ uname -v = 2014-08-13 23:03
 
 PATH: /home/u6020839/bin
 PATH: /home/u6020839/bin
+PATH: /home/u6020839/bin
+PATH: /home/u6020839/bin
 PATH: /home/u6020839/tmp/srcget
 PATH: /home/u6020839/bin
 PATH: /c/java/jdk1_7/bin
@@ -609,7 +611,7 @@ configure:18285: $? = 0
 configure:18285: result: yes
 configure:18299: checking for shl_load
 configure:18299: gcc -o conftest.exe   -g conftest.c  >&5
-/tmp/ccYAbI0E.o: In function `main':
+/tmp/ccex7IwO.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.c:55: undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:18299: $? = 1
@@ -1694,7 +1696,7 @@ configure:20659: checking for aio.h
 configure:20659: result: no
 configure:20669: checking for aio_read in -lrt
 configure:20694: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp -lrt   >&5
-/tmp/cc24jmkZ.o: In function `main':
+/tmp/ccjnRYVT.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:69: undefined reference to `aio_read'
 collect2: error: ld returned 1 exit status
 configure:20694: $? = 1
@@ -2726,7 +2728,7 @@ configure:22729: checking for sys/event.h
 configure:22729: result: no
 configure:22747: checking for kqueue
 configure:22747: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccousr5v.o: In function `main':
+/tmp/ccayMgjl.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:113: undefined reference to `kqueue'
 collect2: error: ld returned 1 exit status
 configure:22747: $? = 1
@@ -2852,7 +2854,7 @@ configure:22768: enabling kqueue for net I/O: no
 configure:22783: enabling epoll syscall for net I/O: auto
 configure:22808: checking for library containing epoll_ctl
 configure:22839: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccoys8ro.o: In function `main':
+/tmp/ccyZ3v9t.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:90: undefined reference to `epoll_ctl'
 collect2: error: ld returned 1 exit status
 configure:22839: $? = 1
@@ -3493,7 +3495,7 @@ configure:23194: Linux Netfilter support requested: auto
 configure:23220: Linux Netfilter Conntrack support requested: auto
 configure:23223: checking for library containing nfct_query
 configure:23254: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccq9LZop.o: In function `main':
+/tmp/ccWncQEJ.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:94: undefined reference to `nfct_query'
 collect2: error: ld returned 1 exit status
 configure:23254: $? = 1
@@ -30174,7 +30176,7 @@ configure:28839: checking for sys/capability.h
 configure:28839: result: no
 configure:28849: checking for cap_clear_flag in -lcap
 configure:28874: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp -lcap   >&5
-/tmp/ccAsi9p6.o: In function `main':
+/tmp/ccOzKisj.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:231: undefined reference to `cap_clear_flag'
 collect2: error: ld returned 1 exit status
 configure:28874: $? = 1
@@ -30677,7 +30679,7 @@ configure:29181: $? = 0
 configure:29198: result: none required
 configure:29206: checking for library containing opcom_stack_trace
 configure:29237: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccXY6ds3.o: In function `main':
+/tmp/ccOzFba2.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:233: undefined reference to `opcom_stack_trace'
 collect2: error: ld returned 1 exit status
 configure:29237: $? = 1
@@ -31166,7 +31168,7 @@ configure:29293: $? = 0
 configure:29310: result: none required
 configure:29318: checking for library containing yp_match
 configure:29349: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccXJPgS0.o: In function `main':
+/tmp/ccPzNK84.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:233: undefined reference to `yp_match'
 collect2: error: ld returned 1 exit status
 configure:29349: $? = 1
@@ -39761,7 +39763,7 @@ configure: failed program was:
 configure:31311: result: no
 configure:31652: checking for backtrace_symbols_fd
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccm1tjTe.o: In function `main':
+/tmp/cc172PjJ.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:265: undefined reference to `backtrace_symbols_fd'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -40041,7 +40043,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for bswap_16
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/cc0QdWBl.o: In function `main':
+/tmp/ccK0rIEZ.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:266: undefined reference to `bswap_16'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -40318,7 +40320,7 @@ configure: failed program was:
 configure:31652: result: no
 configure:31652: checking for bswap_32
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccaE3Z2c.o: In function `main':
+/tmp/ccpfTv2B.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:266: undefined reference to `bswap_32'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -40595,7 +40597,7 @@ configure: failed program was:
 configure:31652: result: no
 configure:31652: checking for bswap16
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/cco7bzxQ.o: In function `main':
+/tmp/cczfFO4E.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:266: undefined reference to `bswap16'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -40872,7 +40874,7 @@ configure: failed program was:
 configure:31652: result: no
 configure:31652: checking for bswap32
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccraYjzM.o: In function `main':
+/tmp/ccjHETSx.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:266: undefined reference to `bswap32'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -41149,7 +41151,7 @@ configure: failed program was:
 configure:31652: result: no
 configure:31652: checking for eui64_aton
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/cc2p8F53.o: In function `main':
+/tmp/ccrCwbab.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:266: undefined reference to `eui64_aton'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -41450,7 +41452,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for getspnam
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccwbbAjZ.o: In function `main':
+/tmp/ccYdJwh9.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:272: undefined reference to `getspnam'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -41741,7 +41743,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for htobe16
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccneJUFm.o: In function `main':
+/tmp/ccDcF2bp.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:274: undefined reference to `htobe16'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -42026,7 +42028,7 @@ configure: failed program was:
 configure:31652: result: no
 configure:31652: checking for htole16
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/cccxctS5.o: In function `main':
+/tmp/ccztiycM.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:274: undefined reference to `htole16'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -42319,7 +42321,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for mallocblksize
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccq4yfkk.o: In function `main':
+/tmp/cchgC95y.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:276: undefined reference to `mallocblksize'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -42630,7 +42632,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for mstats
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccwqIyY5.o: In function `main':
+/tmp/ccoQe1zv.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:282: undefined reference to `mstats'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -42927,7 +42929,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for prctl
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/ccQjnavU.o: In function `main':
+/tmp/ccFGu5TZ.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:283: undefined reference to `prctl'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -43269,7 +43271,7 @@ configure:31652: $? = 0
 configure:31652: result: yes
 configure:31652: checking for sched_getaffinity
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/cc4KhVvY.o: In function `main':
+/tmp/cc5Oxdsd.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:295: undefined reference to `sched_getaffinity'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -43575,7 +43577,7 @@ configure: failed program was:
 configure:31652: result: no
 configure:31652: checking for sched_setaffinity
 configure:31652: g++ -o conftest.exe -g -O2 -march=native -std=c++11  -g conftest.cpp  >&5
-/tmp/cczJKGDq.o: In function `main':
+/tmp/cc4j7lRr.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/conftest.cpp:295: undefined reference to `sched_setaffinity'
 collect2: error: ld returned 1 exit status
 configure:31652: $? = 1
@@ -47071,6 +47073,7 @@ config.status:1721: creating helpers/storeid_rewrite/file/Makefile
 config.status:1721: creating tools/Makefile
 config.status:1721: creating tools/purge/Makefile
 config.status:1721: creating include/autoconf.h
+config.status:1887: include/autoconf.h is unchanged
 config.status:1935: executing depfiles commands
 config.status:1935: executing libtool commands
 configure:36491: === configuring in libltdl (/home/u6020839/src/web/squid/build_repo/libltdl)

@@ -29,6 +29,8 @@ uname -v = 2014-08-13 23:03
 
 PATH: /home/u6020839/bin
 PATH: /home/u6020839/bin
+PATH: /home/u6020839/bin
+PATH: /home/u6020839/bin
 PATH: /home/u6020839/tmp/srcget
 PATH: /home/u6020839/bin
 PATH: /c/java/jdk1_7/bin
@@ -398,7 +400,7 @@ configure:12014: $? = 0
 configure:12014: result: yes
 configure:12028: checking for shl_load
 configure:12028: gcc -o conftest.exe -g -O2   conftest.c  >&5
-/tmp/cc8kmXw5.o: In function `main':
+/tmp/ccty0Gcn.o: In function `main':
 /home/u6020839/src/web/squid/build_repo/libltdl/conftest.c:62: undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:12028: $? = 1
