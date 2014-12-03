@@ -1,0 +1,47 @@
+Making install in compat
+make[1]: Entering directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H  -I/home/u6020839/src/web/squid/repo -I/home/u6020839/src/web/squid/repo/include -I/home/u6020839/src/web/squid/repo/lib -I/home/u6020839/src/web/squid/repo/src -I../include      -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c -o assert.lo /home/u6020839/src/web/squid/repo/compat/assert.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I/home/u6020839/src/web/squid/repo -I/home/u6020839/src/web/squid/repo/include -I/home/u6020839/src/web/squid/repo/lib -I/home/u6020839/src/web/squid/repo/src -I../include -Wall -Wpointer-arith -Wwrite-strings -Wcomments -Wshadow -Werror -pipe -D_REENTRANT -g -O2 -march=native -std=c++11 -MT assert.lo -MD -MP -MF .deps/assert.Tpo -c /home/u6020839/src/web/squid/repo/compat/assert.cc  -DDLL_EXPORT -DPIC -o .libs/assert.o
+In file included from /usr/include/w32api/winsock2.h:56:0,
+                 from /usr/include/w32api/ws2spi.h:13,
+                 from /home/u6020839/src/web/squid/repo/compat/os/mswindows.h:281,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:65,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/w32api/psdk_inc/_fd_types.h:100:2: error: #warning "fd_set and associated macros have been defined in sys/types.      This can cause runtime problems with W32 sockets" [-Werror=cpp]
+ #warning "fd_set and associated macros have been defined in sys/types.  \
+  ^
+In file included from /usr/include/w32api/ws2spi.h:13:0,
+                 from /home/u6020839/src/web/squid/repo/compat/os/mswindows.h:281,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:65,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/w32api/winsock2.h:995:123: error: declaration of C function 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, PTIMEVAL)' conflicts with
+   WINSOCK_API_LINKAGE int WSAAPI select(int nfds,fd_set *readfds,fd_set *writefds,fd_set *exceptfds,const PTIMEVAL timeout);
+                                                                                                                           ^
+In file included from /home/u6020839/src/web/squid/repo/compat/types.h:77:0,
+                 from /home/u6020839/src/web/squid/repo/compat/compat.h:51,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/usr/include/sys/select.h:31:5: error: previous declaration 'int select(int, _types_fd_set*, _types_fd_set*, _types_fd_set*, timeval*)' here
+ int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+     ^
+In file included from /home/u6020839/src/web/squid/repo/compat/compat.h:65:0,
+                 from /home/u6020839/src/web/squid/repo/include/squid.h:66,
+                 from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:
+/home/u6020839/src/web/squid/repo/compat/os/mswindows.h:856:54: error: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Werror=shadow]
+ SQUIDCEXTERN int statfs(const char *, struct statfs *);
+                                                      ^
+In file included from /home/u6020839/src/web/squid/repo/compat/assert.cc:32:0:
+/home/u6020839/src/web/squid/repo/include/squid.h:116:17: error: 'Squid' is not a namespace-name
+ using namespace Squid;
+                 ^
+/home/u6020839/src/web/squid/repo/include/squid.h:116:22: error: expected namespace-name before ';' token
+ using namespace Squid;
+                      ^
+cc1plus: all warnings being treated as errors
+Makefile:898: recipe for target 'assert.lo' failed
+make[1]: *** [assert.lo] Error 1
+make[1]: Leaving directory '/cygdrive/c/data/src/web/squid/build_repo/compat'
+Makefile:562: recipe for target 'install-recursive' failed
+make: *** [install-recursive] Error 1
